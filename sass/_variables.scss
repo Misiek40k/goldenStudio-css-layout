@@ -1,0 +1,30 @@
+$header-color: #000;
+$text-color: #777;
+$light-text-color: #fff;
+
+$base-unit: 1rem;
+
+$body-font-size: $base-unit * .875;
+$body-text-color: $text-color;
+
+$wrapper-max: $base-unit * 58.75;
+
+$header-font-family: montserrat, sans-serif;
+$text-font-family: droid-serif, serif;
+$alternative-text-font-family: roboto-slab, serif;
+
+$fw-bold: 700;
+$fw-regular: 400;
+
+$fs-italic: italic;
+$fs-regular: normal;
+
+$h1-font-size: $base-unit * 4.6875;
+$h2-font-size: $base-unit * 2.5;
+$h3-font-size: $base-unit * 1.125;
+$large-text-font-size: $base-unit;
+
+$br-mobile: 360px;
+$br-tablet: 768px;
+$br-desktop: 992px;
+$br-xl-desktop: 1200px;
