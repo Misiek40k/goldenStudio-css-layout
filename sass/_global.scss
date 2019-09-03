@@ -56,3 +56,9 @@ html {
     font-size: $base-unit;
     line-height: $base-unit * 1.2;
 }
+
+.container {
+    max-width: $wrapper-max;
+    margin: 0 auto;
+    padding: 0 $base-unit;
+}
