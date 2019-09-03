@@ -1,3 +1,58 @@
 @import '_variables';
 @import '_mixins';
 @import '_reset';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+%bigHeadlineTitle {
+    font-family: $header-font-family;
+    font-weight: $fw-bold;
+    font-style: $fs-regular;
+    color: $light-text-color;
+    font-size: $h1-font-size;
+    line-height: $base-unit * 5.625;
+}
+
+%bigHeadlineSubtitle {
+    font-family: $text-font-family;
+    font-weight: $fw-regular;
+    font-style: $fs-italic;
+    color: $light-text-color;
+    font-size: $h2-font-size;
+    line-height: $base-unit * 3;
+}
+
+%navText {
+    font-family: $header-font-family;
+    font-weight: $fw-regular;
+    font-style: $fs-regular;
+    color: $light-text-color;
+    font-size: $text-font-size;
+    line-height: $base-unit * 2.5625;
+}
+
+%sectionTitleText {
+    font-family: $header-font-family;
+    font-weight: $fw-bold;
+    font-style: $fs-regular;
+    color: $header-color;
+    font-size: $text-font-size;
+    line-height: $base-unit * 4.6875;
+}
+
+%sectionSubtitleText {
+    font-family: $text-font-family;
+    font-weight: $fw-regular;
+    font-style: $fs-italic;
+    color: $text-color;
+    font-size: $base-unit;
+    line-height: $base-unit * 1.2;
+}
