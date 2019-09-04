@@ -62,7 +62,7 @@ html {
   box-sizing: inherit;
 }
 
-.header__nav__list__link {
+.header__top__nav__link {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -84,18 +84,23 @@ html {
   height: 43.75rem;
 }
 
-.header__nav {
+.header__top {
   padding-top: 3.125rem;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header__nav__item {
+.header__top__logo {
   -ms-flex: 1;
       flex: 1;
 }
 
-.header__nav__list {
+.header__top__nav {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.header__top__nav__list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;

@@ -11,21 +11,30 @@
         url(../images/headline.jpg) no-repeat center center;
         height: $base-unit * 43.75;
 
-    &__nav {
+    &__top {
         padding-top: $base-unit * 3.125;
         display: flex;
 
-        &__item {
+        &__logo {
             flex: 1;
         }
 
-        &__list {
-            display: flex;
-            justify-content: space-around
+        &__logo__link {
+
         }
 
-        &__list__link {
-            @extend%navText;
+        &__nav {
+            flex: 1;
+            
+
+            &__list {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            &__link {
+                @extend%navText;
+            }
         }
     }
 }
