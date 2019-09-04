@@ -37,6 +37,7 @@ html {
     color: $light-text-color;
     font-size: $text-font-size;
     line-height: $base-unit * 2.5625;
+    text-decoration: none;
 }
 
 %sectionTitleText {

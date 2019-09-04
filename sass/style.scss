@@ -3,12 +3,29 @@
 /* Header */
 
 .header {
-    background: $header-color;
-    height: $base-unit * 43.75;
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(../images/headline.jpg) no-repeat center center;
+        height: $base-unit * 43.75;
 
-    &__img {
-        height: 100%;
-        background: url(../images/headline.jpg) no-repeat fixed center center;
-        opacity: 0.4;
+    &__nav {
+        padding-top: $base-unit * 3.125;
+        display: flex;
+
+        &__item {
+            flex: 1;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-around
+        }
+
+        &__list__link {
+            @extend%navText;
+        }
     }
 }
