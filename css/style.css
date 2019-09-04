@@ -62,6 +62,16 @@ html {
   box-sizing: inherit;
 }
 
+.header__top__logo__link {
+  font-family: Pacifico, cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #fed136;
+  font-size: 1.625rem;
+  line-height: 2.5625rem;
+  text-decoration: none;
+}
+
 .header__top__nav__link {
   font-family: montserrat, sans-serif;
   font-weight: 400;

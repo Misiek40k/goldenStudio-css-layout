@@ -20,13 +20,12 @@
         }
 
         &__logo__link {
-
+            @extend%logoText;
         }
 
         &__nav {
             flex: 1;
             
-
             &__list {
                 display: flex;
                 justify-content: space-around;
