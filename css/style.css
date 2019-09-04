@@ -100,10 +100,44 @@ html {
   text-decoration: none;
 }
 
+.btn-main {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
 .container {
   max-width: 58.75rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  padding: 25px 50px;
+  border-radius: 5px;
+  font-family: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-position: 100% 0;
+  background-size: 300%;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+}
+
+.btn-main {
+  color: #fff;
+  background: #fed136;
+}
+
+.btn-main:hover {
+  color: #777;
 }
 
 /* Header */
@@ -114,11 +148,16 @@ html {
 }
 
 .header__splash {
+  width: 80%;
   text-align: center;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
+}
+
+.header__splash__inner__title {
+  margin-bottom: 3.125rem;
 }
 
 .header__splash__inner__subtitle {

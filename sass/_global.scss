@@ -50,6 +50,14 @@ html {
     text-decoration: none;
 }
 
+%buttonText {
+    font-family: $header-font-family;
+    font-weight: $fw-bold;
+    font-style: $fs-regular;
+    color: $light-text-color;
+    font-size: $base-unit * 1.125;
+}
+
 %sectionTitleText {
     font-family: $header-font-family;
     font-weight: $fw-bold;
@@ -72,4 +80,31 @@ html {
     max-width: $wrapper-max;
     margin: 0 auto;
     padding: 0 $base-unit;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    padding: 25px 50px;
+    border-radius: 5px;
+    font-family: $light-text-color;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: 100% 0;
+    background-size: 300%;
+    
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+.btn-main {
+    color: $light-text-color;
+    background: $product-color;
+    @extend%buttonText;
+    
+    &:hover {
+        color: $text-color;
+    }
 }
