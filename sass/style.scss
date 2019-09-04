@@ -23,11 +23,21 @@
         &__inner__title {
             margin-bottom: $base-unit * 3.125;
             @extend%bigHeadlineTitle;
+
+            @include max-media($br-tablet) {
+                font-size: $base-unit * 3;
+                margin-bottom: $base-unit *2.5;
+            }
         }
 
         &__inner__subtitle {
             @extend%bigHeadlineSubtitle;
             margin-bottom: $base-unit * 3.125;
+
+            @include max-media($br-tablet) {
+                font-size: $base-unit * 2;
+                margin-bottom: $base-unit * 1.75;
+            }
         }
     }
 
