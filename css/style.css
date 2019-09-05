@@ -117,6 +117,15 @@ html {
   line-height: 4.6875rem;
 }
 
+.services__descr {
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
 .services {
   padding: 7.5rem 0;
 }
@@ -236,5 +245,42 @@ html {
 /* Services */
 .services {
   text-align: center;
+}
+
+.services__descr {
+  margin-bottom: 5rem;
+}
+
+.services__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .services__inner {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+
+.services__inner__item {
+  width: 31%;
+  margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .services__inner__item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .services__inner__item {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
