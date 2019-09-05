@@ -76,6 +76,15 @@ html {
     line-height: $base-unit * 1.2;
 }
 
+%itemTitleText {
+    font-family: $header-font-family;
+    font-weight: $fw-bold;
+    font-style: $fs-regular;
+    color: $header-color;
+    font-size: $base-unit * 1.125;
+    line-height: $base-unit * 4.6875; 
+}
+
 %sectionPadding {
     padding: $base-unit * 7.5 0;
 }
