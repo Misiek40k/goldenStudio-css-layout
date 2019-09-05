@@ -144,3 +144,20 @@
         }
     }
 }
+
+/* Portfolio */
+
+.portfolio {
+    @extend%sectionPadding;
+    text-align: center;
+    background: $grey-background-color;
+
+    &__title {
+        @extend%sectionTitleText;
+    }
+
+    &__descr {
+        @extend%sectionDescrText;
+        margin-bottom: $base-unit * 5;
+    }
+}

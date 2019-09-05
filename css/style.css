@@ -108,7 +108,7 @@ html {
   font-size: 1.125rem;
 }
 
-.services__title {
+.services__title, .portfolio__title {
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -117,7 +117,7 @@ html {
   line-height: 4.6875rem;
 }
 
-.services__descr {
+.services__descr, .portfolio__descr {
   font-family: droid-serif, serif;
   font-weight: 400;
   font-style: italic;
@@ -135,7 +135,7 @@ html {
   line-height: 4.6875rem;
 }
 
-.services {
+.services, .portfolio {
   padding: 7.5rem 0;
 }
 
@@ -311,5 +311,15 @@ html {
   color: #777;
   font-size: 0.875rem;
   line-height: 1rem;
+}
+
+/* Portfolio */
+.portfolio {
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.portfolio__descr {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
