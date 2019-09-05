@@ -111,7 +111,8 @@
             margin: 0 $base-unit;
 
             @include max-media($br-tablet) {
-                width: 80%; 
+                width: 80%;
+                margin-bottom: $base-unit * 2; 
             }
 
             @include max-media($br-mobile) {

@@ -284,6 +284,7 @@ html {
 @media (max-width: 768px) {
   .services__inner__item {
     width: 80%;
+    margin-bottom: 2rem;
   }
 }
 
