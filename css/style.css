@@ -294,6 +294,16 @@ html {
   }
 }
 
+.services__inner__item__icon {
+  font-size: 2.1rem;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  line-height: 4.5625rem;
+  color: #fed136;
+  border-radius: 50%;
+  border: 2px #fed136 solid;
+}
+
 .services__inner__item__descr {
   font-family: droid-serif, serif;
   font-weight: 400;
