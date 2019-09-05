@@ -108,6 +108,10 @@ html {
   font-size: 1.125rem;
 }
 
+.services {
+  padding: 7.5rem 0;
+}
+
 .container {
   max-width: 58.75rem;
   margin: 0 auto;
@@ -219,4 +223,6 @@ html {
     border-bottom: 1px #fff solid;
   }
 }
+
+/* Services */
 /*# sourceMappingURL=style.css.map */
