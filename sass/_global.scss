@@ -76,6 +76,10 @@ html {
     line-height: $base-unit * 1.2;
 }
 
+%sectionPadding {
+    padding-bottom: $base-unit * 7.5 0;
+}
+
 .container {
     max-width: $wrapper-max;
     margin: 0 auto;
