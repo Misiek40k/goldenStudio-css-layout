@@ -86,4 +86,9 @@
 
 .services {
     @extend%sectionPadding;
+    text-align: center;
+
+    &__title {
+        @extend%sectionTitleText;
+    }
 }
