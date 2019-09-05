@@ -119,11 +119,16 @@
             }
 
             &__title {
-
+                @extend%itemTitleText;
             }
 
             &__descr {
-                
+                font-family: $text-font-family;
+                font-weight: $fw-regular;
+                font-style: $fs-regular;
+                color: $text-color;
+                font-size: $text-font-size;
+                line-height: $base-unit; 
             }
         }
     }

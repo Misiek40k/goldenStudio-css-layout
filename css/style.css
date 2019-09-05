@@ -126,6 +126,15 @@ html {
   line-height: 1.2rem;
 }
 
+.services__inner__item__title {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #000;
+  font-size: 1.125rem;
+  line-height: 4.6875rem;
+}
+
 .services {
   padding: 7.5rem 0;
 }
@@ -282,5 +291,14 @@ html {
   .services__inner__item {
     width: 100%;
   }
+}
+
+.services__inner__item__descr {
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #777;
+  font-size: 0.875rem;
+  line-height: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
