@@ -322,4 +322,33 @@ html {
 .portfolio__descr {
   margin-bottom: 5rem;
 }
+
+.portfolio__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.portfolio__inner__item {
+  display: -ms-flexbox;
+  display: flex;
+  width: 31%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.portfolio__inner__item__imgWrapper {
+  height: 18.75rem;
+  width: 100%;
+}
+
+.portfolio__inner__item__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
