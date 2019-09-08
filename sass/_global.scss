@@ -85,6 +85,13 @@ html {
     line-height: $base-unit * 4.6875; 
 }
 
+%descrText {
+    font-family: $text-font-family;
+    font-weight: $fw-regular;
+    color: $text-color;
+    font-size: $text-font-size;
+}
+
 %sectionPadding {
     padding: $base-unit * 7.5 0;
 }

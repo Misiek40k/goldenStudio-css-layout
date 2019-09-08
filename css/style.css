@@ -135,6 +135,13 @@ html {
   line-height: 4.6875rem;
 }
 
+.services__inner__item__descr, .portfolio__inner__item__descr {
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  color: #777;
+  font-size: 0.875rem;
+}
+
 .services, .portfolio {
   padding: 7.5rem 0;
 }
@@ -305,11 +312,7 @@ html {
 }
 
 .services__inner__item__descr {
-  font-family: droid-serif, serif;
-  font-weight: 400;
   font-style: normal;
-  color: #777;
-  font-size: 0.875rem;
   line-height: 1rem;
 }
 
@@ -365,11 +368,7 @@ html {
 }
 
 .portfolio__inner__item__descr {
-  font-family: droid-serif, serif;
-  font-weight: 400;
   font-style: italic;
-  color: #777;
-  font-size: 0.875rem;
   line-height: 1.05rem;
 }
 /*# sourceMappingURL=style.css.map */

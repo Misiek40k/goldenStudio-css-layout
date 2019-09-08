@@ -134,11 +134,8 @@
             }
 
             &__descr {
-                font-family: $text-font-family;
-                font-weight: $fw-regular;
+                @extend%descrText;
                 font-style: $fs-regular;
-                color: $text-color;
-                font-size: $text-font-size;
                 line-height: $base-unit; 
             }
         }
@@ -196,11 +193,8 @@
             }
 
             &__descr {
-                font-family: $text-font-family;
-                font-weight: $fw-regular;
+                @extend%descrText;
                 font-style: $fs-italic;
-                color: $text-color;
-                font-size: $text-font-size;
                 line-height: $text-font-size * 1.2; 
             }
         }
