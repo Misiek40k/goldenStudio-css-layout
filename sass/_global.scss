@@ -92,6 +92,15 @@ html {
     font-size: $text-font-size;
 }
 
+%footerText {
+    font-family: $header-font-family;
+    font-weight: $fw-regular;
+    font-style: $fs-regular;
+    color: $text-color;
+    font-size: $text-font-size;
+    line-height: $base-unit * 1.375; 
+}
+
 %sectionPadding {
     padding: $base-unit * 7.5 0;
 }
