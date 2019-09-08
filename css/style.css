@@ -126,7 +126,7 @@ html {
   line-height: 1.2rem;
 }
 
-.services__inner__item__title {
+.services__inner__item__title, .portfolio__inner__item__title {
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -338,6 +338,9 @@ html {
   width: 31%;
   -ms-flex-direction: column;
       flex-direction: column;
+  background: #fff;
+  margin-bottom: 3.125rem;
+  text-decoration: none;
 }
 
 .portfolio__inner__item__imgWrapper {
@@ -350,5 +353,23 @@ html {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.portfolio__inner__item__descrWrapper {
+  width: 100%;
+  margin: 2.1875rem 0;
+}
+
+.portfolio__inner__item__title {
+  line-height: 1.375rem;
+}
+
+.portfolio__inner__item__descr {
+  font-family: droid-serif, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #777;
+  font-size: 0.875rem;
+  line-height: 1.05rem;
 }
 /*# sourceMappingURL=style.css.map */

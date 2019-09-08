@@ -170,6 +170,9 @@
             display: flex;
             width: 31%;
             flex-direction: column;
+            background: $light-text-color;
+            margin-bottom: $base-unit * 3.125; 
+            text-decoration: none;
             
             &__imgWrapper {
                 height: $base-unit * 18.75;
@@ -180,6 +183,25 @@
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
+            }
+
+            &__descrWrapper {
+                width: 100%;
+                margin: $base-unit * 2.1875 0;
+            }
+
+            &__title {
+                @extend%itemTitleText;
+                line-height: $base-unit * 1.375;
+            }
+
+            &__descr {
+                font-family: $text-font-family;
+                font-weight: $fw-regular;
+                font-style: $fs-italic;
+                color: $text-color;
+                font-size: $text-font-size;
+                line-height: $text-font-size * 1.2; 
             }
         }
     }
