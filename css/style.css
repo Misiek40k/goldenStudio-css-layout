@@ -346,6 +346,18 @@ html {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .portfolio__inner__item {
+    width: 47%;
+  }
+}
+
+@media (max-width: 360px) {
+  .portfolio__inner__item {
+    width: 100%;
+  }
+}
+
 .portfolio__inner__item__imgWrapper {
   height: 18.75rem;
   width: 100%;

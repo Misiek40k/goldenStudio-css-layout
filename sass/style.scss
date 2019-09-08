@@ -170,6 +170,14 @@
             background: $light-text-color;
             margin-bottom: $base-unit * 3.125; 
             text-decoration: none;
+
+            @include max-media($br-tablet) {
+                width: 47%;
+            }
+
+            @include max-media($br-mobile) {
+                width: 100%;
+            }
             
             &__imgWrapper {
                 height: $base-unit * 18.75;
