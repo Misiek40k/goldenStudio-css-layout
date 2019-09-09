@@ -12,6 +12,10 @@
         url(../images/headline.jpg) no-repeat center center;
         height: $base-unit * 43.75;
 
+    &__logo {
+        width: 50%;
+    }
+
     &__splash {
         width: 80%;
         text-align: center;
@@ -19,25 +23,25 @@
         left: 50%;
         top:50%;
         transform: translate(-50%,-40%);
+    }
 
-        &__inner__title {
-            margin-bottom: $base-unit * 3.125;
-            @extend%bigHeadlineTitle;
+    &__title {
+        margin-bottom: $base-unit * 3.125;
+        @extend%bigHeadlineTitle;
 
-            @include max-media($br-tablet) {
-                font-size: $base-unit * 3;
-                margin-bottom: $base-unit *2.5;
-            }
+        @include max-media($br-tablet) {
+            font-size: $base-unit * 3;
+            margin-bottom: $base-unit *2.5;
         }
+    }
 
-        &__inner__subtitle {
-            @extend%bigHeadlineSubtitle;
-            margin-bottom: $base-unit * 3.125;
+    &__subtitle {
+        @extend%bigHeadlineSubtitle;
+        margin-bottom: $base-unit * 3.125;
 
-            @include max-media($br-tablet) {
-                font-size: $base-unit * 2;
-                margin-bottom: $base-unit * 1.75;
-            }
+        @include max-media($br-tablet) {
+            font-size: $base-unit * 2;
+            margin-bottom: $base-unit * 1.75;
         }
     }
 
@@ -49,36 +53,32 @@
             flex-direction: column-reverse;
             padding-top: $base-unit;
         }
+    }
 
-        &__logo {
-            width: 50%;
+    &__nav {
+        width: 50%;
+
+        @include max-media($br-tablet) {
+            width: 100%;
+            margin-bottom: $base-unit * .75;
         }
+    }
 
-        &__logo__link {
-            @extend%logoText;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+
+        @include max-media($br-tablet) {
+            border-bottom: 1px $light-text-color solid;
         }
+    }
 
-        &__nav {
-            width: 50%;
+    &__link {
+        @extend%navText;
+    }
 
-            @include max-media($br-tablet) {
-                width: 100%;
-                margin-bottom: $base-unit * .75;
-            }
-
-            &__list {
-                display: flex;
-                justify-content: space-around;
-
-                @include max-media($br-tablet) {
-                    border-bottom: 1px $light-text-color solid;
-                }
-            }
-
-            &__link {
-                @extend%navText;
-            }
-        }
+    &__link--logo {
+        @extend%logoText;
     }
 }
 
