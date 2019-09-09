@@ -117,7 +117,7 @@ html {
   line-height: 4.6875rem;
 }
 
-.services__subtitle, .portfolio__descr {
+.services__subtitle, .portfolio__subtitle {
   font-family: droid-serif, serif;
   font-weight: 400;
   font-style: italic;
@@ -126,7 +126,7 @@ html {
   line-height: 1.2rem;
 }
 
-.services__item-title, .portfolio__inner__item__title {
+.services__item-title, .portfolio__item-title {
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -135,7 +135,7 @@ html {
   line-height: 4.6875rem;
 }
 
-.services__descr, .portfolio__inner__item__descr {
+.services__descr, .portfolio__descr {
   font-family: droid-serif, serif;
   font-weight: 400;
   color: #777;
@@ -331,11 +331,11 @@ html {
   background: #f7f7f7;
 }
 
-.portfolio__descr {
+.portfolio__subtitle {
   margin-bottom: 5rem;
 }
 
-.portfolio__inner {
+.portfolio__content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -344,7 +344,7 @@ html {
       justify-content: space-between;
 }
 
-.portfolio__inner__item {
+.portfolio__item {
   display: -ms-flexbox;
   display: flex;
   width: 31%;
@@ -356,39 +356,39 @@ html {
 }
 
 @media (max-width: 768px) {
-  .portfolio__inner__item {
+  .portfolio__item {
     width: 47%;
   }
 }
 
 @media (max-width: 360px) {
-  .portfolio__inner__item {
+  .portfolio__item {
     width: 100%;
   }
 }
 
-.portfolio__inner__item__imgWrapper {
+.portfolio__img-wrapper {
   height: 18.75rem;
   width: 100%;
 }
 
-.portfolio__inner__item__img {
+.portfolio__img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.portfolio__inner__item__descrWrapper {
+.portfolio__descr-wrapper {
   width: 100%;
   margin: 2.1875rem 0;
 }
 
-.portfolio__inner__item__title {
+.portfolio__item-title {
   line-height: 1.375rem;
 }
 
-.portfolio__inner__item__descr {
+.portfolio__descr {
   font-style: italic;
   line-height: 1.05rem;
 }

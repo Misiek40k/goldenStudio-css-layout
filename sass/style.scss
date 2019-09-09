@@ -153,59 +153,59 @@
         @extend%sectionTitleText;
     }
 
-    &__descr {
+    &__subtitle {
         @extend%sectionDescrText;
         margin-bottom: $base-unit * 5;
     }
 
-    &__inner {
+    &__content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
 
-        &__item {
-            display: flex;
-            width: 31%;
-            flex-direction: column;
-            background: $light-text-color;
-            margin-bottom: $base-unit * 3.125; 
-            text-decoration: none;
+    &__item {
+        display: flex;
+        width: 31%;
+        flex-direction: column;
+        background: $light-text-color;
+        margin-bottom: $base-unit * 3.125; 
+        text-decoration: none;
 
-            @include max-media($br-tablet) {
-                width: 47%;
-            }
-
-            @include max-media($br-mobile) {
-                width: 100%;
-            }
-            
-            &__imgWrapper {
-                height: $base-unit * 18.75;
-                width: 100%;
-            }
-
-            &__img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-
-            &__descrWrapper {
-                width: 100%;
-                margin: $base-unit * 2.1875 0;
-            }
-
-            &__title {
-                @extend%itemTitleText;
-                line-height: $base-unit * 1.375;
-            }
-
-            &__descr {
-                @extend%descrText;
-                font-style: $fs-italic;
-                line-height: $text-font-size * 1.2; 
-            }
+        @include max-media($br-tablet) {
+            width: 47%;
         }
+
+        @include max-media($br-mobile) {
+            width: 100%;
+        }
+    }
+
+    &__img-wrapper {
+        height: $base-unit * 18.75;
+        width: 100%;
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__descr-wrapper {
+        width: 100%;
+        margin: $base-unit * 2.1875 0;
+    }
+
+    &__item-title {
+        @extend%itemTitleText;
+        line-height: $base-unit * 1.375;
+    }
+
+    &__descr {
+        @extend%descrText;
+        font-style: $fs-italic;
+        line-height: $text-font-size * 1.2; 
     }
 }
 
