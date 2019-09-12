@@ -113,8 +113,22 @@
             flex-direction: column;
             align-items: center;
         } 
-        
-        &__item-title {
+    }
+
+    .item {
+        width: 31%;
+        margin: 0 $base-unit;
+
+        @include max-media($br-tablet) {
+            width: 80%;
+            margin-bottom: $base-unit * 2; 
+        }
+
+        @include max-media($br-mobile) {
+            width: 100%;
+        }
+
+        &__title {
             @extend%itemTitleText;
         }
     
@@ -133,20 +147,6 @@
             border-radius: 50%;
             border: 2px $product-color solid;
         }
-    
-        &__item {
-            width: 31%;
-            margin: 0 $base-unit;
-    
-            @include max-media($br-tablet) {
-                width: 80%;
-                margin-bottom: $base-unit * 2; 
-            }
-    
-            @include max-media($br-mobile) {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -157,6 +157,10 @@
     text-align: center;
     background: $grey-background-color;
 
+    &__container {
+        @extend%container;
+    }
+
     &__title {
         @extend%sectionTitleText;
     }
@@ -166,13 +170,13 @@
         margin-bottom: $base-unit * 5;
     }
 
-    &__content {
+    .content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    &__item {
+    .item {
         display: flex;
         width: 31%;
         flex-direction: column;
@@ -187,33 +191,33 @@
         @include max-media($br-mobile) {
             width: 100%;
         }
-    }
 
-    &__img-wrapper {
-        height: $base-unit * 18.75;
-        width: 100%;
-    }
-
-    &__img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__descr-wrapper {
-        width: 100%;
-        margin: $base-unit * 2.1875 0;
-    }
-
-    &__item-title {
-        @extend%itemTitleText;
-        line-height: $base-unit * 1.375;
-    }
-
-    &__descr {
-        @extend%descrText;
-        font-style: $fs-italic;
-        line-height: $text-font-size * 1.2; 
+        &__img-wrapper {
+            height: $base-unit * 18.75;
+            width: 100%;
+        }
+    
+        &__img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    
+        &__descr-wrapper {
+            width: 100%;
+            margin: $base-unit * 2.1875 0;
+        }
+    
+        &__title {
+            @extend%itemTitleText;
+            line-height: $base-unit * 1.375;
+        }
+    
+        &__descr {
+            @extend%descrText;
+            font-style: $fs-italic;
+            line-height: $text-font-size * 1.2; 
+        }
     }
 }
 
@@ -222,14 +226,14 @@
 .footer {
     margin: $base-unit * 3.125 0;
 
-    &__content {
-        width: 100%;
+    &__container {
+        @extend%container;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
 
-    &__copy {
+    .copy {
         grid-column: 1 / 2;
         grid-row: 1;
         @extend%footerText;
@@ -242,42 +246,42 @@
         }
     }
 
-    &__list {
+    .list {
         display: flex;
         grid-column: 2 / 3;
         grid-row: 1;
         justify-content: center;
-    }
 
-    &__link {
-        text-decoration: none;
-    }
-
-    &__icon {
-        position: relative;
-        font-size: $base-unit * .875;
-        width: $base-unit * 1.5;
-        height: $base-unit * 1.5;
-        line-height: $base-unit * 1.5;
-        background: $header-color;
-        color: $light-text-color;
-        border-radius: 50%;
-        margin: 0 $base-unit * .25;
-
-        &::before {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+        &__link {
+            text-decoration: none;
         }
-    }
 
-    &__descr {
-        height: 1px;
-        width: 1px;
-        position: absolute;
-        left: -10000em;
-        top: 0;
+        &__icon {
+            position: relative;
+            font-size: $base-unit * .875;
+            width: $base-unit * 1.5;
+            height: $base-unit * 1.5;
+            line-height: $base-unit * 1.5;
+            background: $header-color;
+            color: $light-text-color;
+            border-radius: 50%;
+            margin: 0 $base-unit * .25;
+    
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        &__descr {
+            height: 1px;
+            width: 1px;
+            position: absolute;
+            left: -10000em;
+            top: 0;
+        }
     }
 }
 
