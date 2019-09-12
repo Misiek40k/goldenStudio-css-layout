@@ -126,7 +126,7 @@ html {
   line-height: 1.2rem;
 }
 
-.services__item-title, .portfolio__item-title {
+.services .content__item-title, .portfolio__item-title {
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -135,7 +135,7 @@ html {
   line-height: 4.6875rem;
 }
 
-.services__descr, .portfolio__descr {
+.services .content__descr, .portfolio__descr {
   font-family: droid-serif, serif;
   font-weight: 400;
   color: #777;
@@ -155,7 +155,7 @@ html {
   padding: 7.5rem 0;
 }
 
-.header__container {
+.header__container, .services__container {
   max-width: 58.75rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -276,7 +276,7 @@ html {
   margin-bottom: 5rem;
 }
 
-.services__content {
+.services .content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -284,7 +284,7 @@ html {
 }
 
 @media (max-width: 768px) {
-  .services__content {
+  .services .content {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
@@ -292,12 +292,12 @@ html {
   }
 }
 
-.services__descr {
+.services .content__descr {
   font-style: normal;
   line-height: 1rem;
 }
 
-.services__icon {
+.services .content__icon {
   font-size: 2.1rem;
   width: 4.5625rem;
   height: 4.5625rem;
@@ -307,20 +307,20 @@ html {
   border: 2px #fed136 solid;
 }
 
-.services__item {
+.services .content__item {
   width: 31%;
   margin: 0 1rem;
 }
 
 @media (max-width: 768px) {
-  .services__item {
+  .services .content__item {
     width: 80%;
     margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 360px) {
-  .services__item {
+  .services .content__item {
     width: 100%;
   }
 }
