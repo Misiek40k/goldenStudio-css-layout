@@ -10,74 +10,74 @@
           rgba(0, 0, 0, 0.7)
         ),
         url(../images/headline.jpg) no-repeat center center;
-        height: $base-unit * 43.75; 
-}
+    height: $base-unit * 43.75; 
 
-.container__top {
-    padding-top: $base-unit * 3.125;
-    display: flex;
-
-    @include max-media($br-tablet) {
-        flex-direction: column-reverse;
-        padding-top: $base-unit;
-    }
-}
-
-.logo {
-    width: 50%;
-}
-
-.logo__link {
-    @extend%logoText;
-}
-
-.nav {
-    width: 50%;
-
-    @include max-media($br-tablet) {
-        width: 100%;
-        margin-bottom: $base-unit * .75;
-    }
-
-    &__link {
-        @extend%navText;
-    }
-
-    &__list {
+    .container__top {
+        padding-top: $base-unit * 3.125;
         display: flex;
-        justify-content: space-around;
-
+    
         @include max-media($br-tablet) {
-            border-bottom: 1px $light-text-color solid;
-        }
-    }   
-}
-
-.splash {
-    width: 80%;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%,-40%);
-
-    &__title {
-        margin-bottom: $base-unit * 3.125;
-        @extend%bigHeadlineTitle;
-
-        @include max-media($br-tablet) {
-            font-size: $base-unit * 3;
-            margin-bottom: $base-unit *2.5;
+            flex-direction: column-reverse;
+            padding-top: $base-unit;
         }
     }
-
-    &__subtitle {
-        @extend%bigHeadlineSubtitle;
-        margin-bottom: $base-unit * 3.125;
-
+    
+    .logo {
+        width: 50%;
+    }
+    
+    .logo__link {
+        @extend%logoText;
+    }
+    
+    .nav {
+        width: 50%;
+    
         @include max-media($br-tablet) {
-            font-size: $base-unit * 2;
-            margin-bottom: $base-unit * 1.75;
+            width: 100%;
+            margin-bottom: $base-unit * .75;
+        }
+    
+        &__link {
+            @extend%navText;
+        }
+    
+        &__list {
+            display: flex;
+            justify-content: space-around;
+    
+            @include max-media($br-tablet) {
+                border-bottom: 1px $light-text-color solid;
+            }
+        }   
+    }
+    
+    .splash {
+        width: 80%;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-40%);
+    
+        &__title {
+            margin-bottom: $base-unit * 3.125;
+            @extend%bigHeadlineTitle;
+    
+            @include max-media($br-tablet) {
+                font-size: $base-unit * 3;
+                margin-bottom: $base-unit *2.5;
+            }
+        }
+    
+        &__subtitle {
+            @extend%bigHeadlineSubtitle;
+            margin-bottom: $base-unit * 3.125;
+    
+            @include max-media($br-tablet) {
+                font-size: $base-unit * 2;
+                margin-bottom: $base-unit * 1.75;
+            }
         }
     }
 }
