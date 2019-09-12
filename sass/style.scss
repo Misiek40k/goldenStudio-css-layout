@@ -10,9 +10,13 @@
           rgba(0, 0, 0, 0.7)
         ),
         url(../images/headline.jpg) no-repeat center center;
-    height: $base-unit * 43.75; 
+    height: $base-unit * 43.75;
+    
+    &__container {
+        @extend%container;
+    }
 
-    .container__top {
+    &__top {
         padding-top: $base-unit * 3.125;
         display: flex;
     

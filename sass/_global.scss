@@ -105,7 +105,7 @@ html {
     padding: $base-unit * 7.5 0;
 }
 
-.container {
+%container {
     max-width: $wrapper-max;
     margin: 0 auto;
     padding: 0 $base-unit;

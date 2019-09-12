@@ -155,7 +155,7 @@ html {
   padding: 7.5rem 0;
 }
 
-.container {
+.header__container {
   max-width: 58.75rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -194,14 +194,14 @@ html {
   height: 43.75rem;
 }
 
-.header .container__top {
+.header__top {
   padding-top: 3.125rem;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 768px) {
-  .header .container__top {
+  .header__top {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     padding-top: 1rem;
